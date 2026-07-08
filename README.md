@@ -1,0 +1,99 @@
+# Multi-Servo Motor Control using Arduino Uno
+
+This project demonstrates synchronized control of four SG90 micro servo motors using an Arduino Uno R3. 
+The servo motors perform a coordinated sweep motion before moving to and holding a 90° position. The project was designed,
+programmed, and validated using Tinkercad Circuits Simulation.
+
+---
+
+## Project Overview
+
+The objective of this project is to control multiple servo motors simultaneously using PWM signals generated
+by the Arduino Uno. The simulation demonstrates synchronized motion, making it a simple example of actuator 
+control commonly used in robotics applications.
+
+
+
+
+https://github.com/user-attachments/assets/f55d836b-a7e2-440d-82c9-7e39212016e9
+
+
+---
+
+## Programming Language
+
+- C++ (Arduino)
+
+---
+
+## Development Tools
+
+- Tinkercad Circuits Simulation
+---
+
+## Hardware Components
+
+- Arduino Uno R3
+- 4 × SG90 Micro Servo Motors (180°)
+- Male-to-Male Jumper Wires
+- USB Power Supply (Simulation)
+
+---
+
+## Wiring
+
+Each SG90 servo motor has three connections:
+
+- **Orange** → Signal (PWM)
+- **Red** → 5V
+- **Brown/Purple** → GND
+
+| Servo Motor | Signal Pin | Power | Ground |
+|--------------|-----------|--------|--------|
+| Servo 1 | D9 | 5V | GND |
+| Servo 2 | D11 | 5V | GND |
+| Servo 3 | D6 | 5V | GND |
+| Servo 4 | D10 | 5V | GND |
+
+All servo motors share the same 5V and GND connections from the Arduino Uno.
+
+---
+
+## Project Workflow
+
+1. Initialize four SG90 servo motors.
+2. Generate synchronized sweep motion.
+3. Move all servo motors simultaneously.
+4. Return all servos to the 90° position.
+5. Hold the final position.
+
+---
+
+## Repository Contents
+
+- **multi_servo_control.ino** – Arduino source code.
+- **simulation.gif** – Animated demonstration of the simulation output showing
+-  the synchronized movement of the four servo motors.
+- **README.md** – Project documentation.
+
+---
+
+## Applications
+
+This project demonstrates the fundamentals of synchronized servo motor control used in robotics, including:
+
+- Robotic Arms
+- Quadruped Robots
+- Humanoid Robots
+- Motion Control Systems
+- Robotics Education
+
+---
+
+## Simulation
+
+The complete circuit was designed, programmed, and tested using **Tinkercad Circuits Simulation** before
+physical implementation. The simulation output is included in this repository as an animated GIF to
+demonstratethe behavior of the servo motors during operation.
+
+---
